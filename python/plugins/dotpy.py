@@ -16,7 +16,7 @@ class Source (object) :
 
     def getSource (self) :
         sourcePath = './plugins/dotpy_source'
-        with open(sourcePath, 'r') as f:
+        with open(sourcePath, 'r',encoding = 'utf-8') as f:
             lines = f.readlines()
             total = len(lines)
             threads = ThreadPool(20)
